@@ -1,8 +1,13 @@
+var favoriteFlavors = ["chocolate","strawberry","vanilla","bubblegum"];
+
+
 $(document).ready(function(){
-  var favoriteFlavors = ["chocolate","strawberry","vanilla","bubblegum"];
-  favoriteFlavors.forEach(function(favoriteFlavor){
-    $("ul").append("<li>" + favoriteFlavor + "</li>")
-  })
+  
+  for(var i = 0; i < favoriteFlavors.length; i++){
+    $("ul").append("<li>" + favoriteFlavors[i] + "</li>")
+  }
+    
+  
 
 
 });
